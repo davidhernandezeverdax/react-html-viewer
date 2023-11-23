@@ -1,0 +1,81 @@
+.html-viewer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.html-viewer-section {
+  width: 100%;
+  padding: 10px;
+}
+
+.html-viewer-textarea {
+  width: 100%;
+  height: 320px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.html-viewer-toolbar {
+  height: 48px;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #4b5563;
+  border-radius: 8px 8px 0 0;
+}
+
+.html-viewer-toolbar-button {
+  margin-left: 8px;
+  margin-right: 8px;
+  border: 1px solid #06b6d4;
+  color: #06b6d4;
+  background: transparent;
+  padding: 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.html-viewer-toolbar-button:hover {
+  border-color: #2563eb;
+  color: #2563eb;
+}
+
+.html-viewer-output {
+  position: relative;
+  width: 100%;
+  height: 256px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0 0 8px 8px;
+  overflow: auto;
+}
+
+.html-viewer-output iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.html-viewer-output-formatted {
+  background-color: #1f2937;
+  color: white;
+}
+
+.html-viewer-output-raw {
+  background-color: white;
+}
+
+.html-viewer-icon {
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .html-viewer-container {
+    flex-direction: row;
+  }
+  .html-viewer-section {
+    width: 50%;
+  }
+}
